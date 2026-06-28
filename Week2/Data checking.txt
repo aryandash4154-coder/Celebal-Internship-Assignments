@@ -1,0 +1,23 @@
+-- ============================================================
+-- File    : Data Checking.sql
+-- Purpose : Validate data after insertion
+-- ============================================================
+
+USE superstore_db;
+
+-- Validate Total Rows
+SELECT COUNT(*) AS Total_Rows
+FROM superstore;
+
+-- Validate Total Columns
+SELECT COUNT(*) AS Total_Columns
+FROM information_schema.columns
+WHERE table_schema = 'superstore_db'
+AND table_name = 'superstore';
+
+-- Show All Tables
+SHOW TABLES;
+
+-- First 10 Records
+SELECT * FROM superstore
+LIMIT 10;
