@@ -1,0 +1,32 @@
+SQL Sales Analysis - Query Results
+===================================
+
+1. Total Rows in Dataset
+   Result: 9694 rows
+
+2. Total Columns
+   Result: 21 columns
+
+3. Total Sales
+   Result: 2,297,200.86
+
+4. Average Sales
+   Result: 229.85
+
+5. Highest Sales
+   Result: 22,638.48
+
+6. Total Profit
+   Result: 286,397.02
+
+7. Top Category by Sales
+   Result: Technology
+
+8. Top Region by Sales
+   Result: West
+
+9. Top Segment
+   Result: Consumer
+
+10. Total Unique Orders
+    Result: 5009
