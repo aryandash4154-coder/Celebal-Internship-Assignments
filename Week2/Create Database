@@ -1,0 +1,8 @@
+
+-- Project  : SQL Sales Analysis
+-- Author   : Yashashree
+-- Dataset  : Superstore Sales (Kaggle)
+-- Tool     : MySQL Workbench
+
+
+USE superstore_db;
