@@ -1,0 +1,64 @@
+# Project Information
+
+**Project Title:** SQL Sales Analysis
+**Author:** Aryan Dash
+**Date:** 28 June 2026
+**Internship:** Celebal Data Engineering Internship
+
+## Dataset
+
+**Name:** Superstore Sales Dataset
+**Source:** Kaggle
+**Rows:** 9,994
+**Columns:** 21
+
+## Tools Used
+
+* MySQL Workbench 8.0
+* Visual Studio Code (VS Code)
+
+## Objective
+
+The objective of this project is to analyze the Superstore Sales dataset using SQL. Various SQL concepts such as filtering, aggregation, joins, grouping, and advanced queries are applied to extract meaningful business insights and improve data analysis skills.
+
+## Project Sections
+
+### Section A – Basic Queries
+
+* Table exploration
+* Record count
+* Basic data retrieval
+
+### Section B – Filtering
+
+* WHERE clause
+* AND, OR, BETWEEN, IN, LIKE
+* Sorting using ORDER BY
+
+### Section C – Aggregation
+
+* COUNT()
+* SUM()
+* AVG()
+* MIN() and MAX()
+* GROUP BY and HAVING
+
+### Section D – Joins
+
+* INNER JOIN
+* LEFT JOIN
+
+### Section E – Advanced SQL
+
+* CASE statements
+* Transactions
+* Date functions
+* Subqueries
+
+### Section F – Business Queries
+
+* Monthly sales analysis
+* Top customers
+* Most profitable products
+* Regional sales performance
+* Sales by category and segment
