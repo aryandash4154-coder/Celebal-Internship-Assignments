@@ -1,0 +1,11 @@
+-- ==========================================
+-- D0 : Insert Sample Customer Data
+-- ==========================================
+
+INSERT INTO customers
+(customer_id, customer_name, region)
+VALUES
+    (1, 'Amit', 'East'),
+    (2, 'Sneha', 'West'),
+    (3, 'Rahul', 'North'),
+    (4, 'Priya', 'South');
