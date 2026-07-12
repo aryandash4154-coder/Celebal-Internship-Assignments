@@ -1,0 +1,41 @@
+import os
+import json
+from datetime import datetime
+
+# Source file path
+source_file = "data/source/Superstore.csv"
+
+# Check if file exists
+if not os.path.exists(source_file):
+    print(" File not found:", source_file)
+    exit()
+
+# Read metadata
+metadata = {
+    "File Name": os.path.basename(source_file),
+    "File Size (Bytes)": os.path.getsize(source_file),
+    "Created Time": datetime.fromtimestamp(
+        os.path.getctime(source_file)
+    ).strftime("%Y-%m-%d %H:%M:%S"),
+    "Modified Time": datetime.fromtimestamp(
+        os.path.getmtime(source_file)
+    ).strftime("%Y-%m-%d %H:%M:%S"),
+    "Absolute Path": os.path.abspath(source_file)
+}
+
+# Create output folder if it doesn't exist
+os.makedirs("output", exist_ok=True)
+
+# Save metadata to JSON
+with open("output/metadata.json", "w") as file:
+    json.dump(metadata, file, indent=4)
+
+# Display metadata
+print("=" * 50)
+print("GET METADATA ACTIVITY")
+print("=" * 50)
+
+for key, value in metadata.items():
+    print(f"{key}: {value}")
+
+print("\n Metadata saved successfully!")

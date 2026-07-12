@@ -1,0 +1,29 @@
+import os
+import shutil
+from datetime import datetime
+
+# Source and destination paths
+source_file = "data/source/Superstore.csv"
+destination_folder = "data/destination"
+
+# Check if source exists
+if not os.path.exists(source_file):
+    print(" Source file not found!")
+    exit()
+
+# Create destination folder if it doesn't exist
+os.makedirs(destination_folder, exist_ok=True)
+
+# Destination file path
+destination_file = os.path.join(destination_folder, "Superstore.csv")
+
+# Copy file
+shutil.copy2(source_file, destination_file)
+
+print("=" * 50)
+print("COPY DATA ACTIVITY")
+print("=" * 50)
+print(f"Source      : {source_file}")
+print(f"Destination : {destination_file}")
+print(f"Copied At   : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+print("\n File copied successfully!")
