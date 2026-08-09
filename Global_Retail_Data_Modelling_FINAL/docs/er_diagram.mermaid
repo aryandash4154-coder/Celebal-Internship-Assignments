@@ -1,0 +1,68 @@
+erDiagram
+    gold_dim_customers ||--o{ gold_fact_sales : "customer_key"
+    gold_dim_products ||--o{ gold_fact_sales : "product_key"
+    gold_dim_date ||--o{ gold_fact_sales : "order_date_key"
+
+    gold_dim_customers {
+        BIGINT customer_key PK
+        INT customer_id
+        VARCHAR customer_natural_key
+        VARCHAR first_name
+        VARCHAR last_name
+        VARCHAR full_name
+        VARCHAR marital_status
+        VARCHAR gender
+        DATE birthdate
+        INT age
+        VARCHAR age_group
+        VARCHAR country
+        DATE customer_since_date
+        DATE effective_start_date
+        DATE effective_end_date
+        TINYINT is_current
+    }
+
+    gold_dim_products {
+        BIGINT product_key PK
+        INT product_id
+        VARCHAR product_natural_key
+        VARCHAR item_key
+        VARCHAR product_name
+        VARCHAR category_name
+        VARCHAR subcategory_name
+        VARCHAR product_line
+        DECIMAL unit_cost
+        TINYINT is_maintenance_required
+        DATE effective_start_date
+        DATE effective_end_date
+        TINYINT is_current
+    }
+
+    gold_dim_date {
+        INT date_key PK
+        DATE full_date
+        INT year
+        INT quarter
+        INT month_number
+        VARCHAR month_name
+        INT day_of_month
+        VARCHAR day_name
+        TINYINT is_weekend
+    }
+
+    gold_fact_sales {
+        BIGINT sales_key PK
+        VARCHAR order_number
+        BIGINT customer_key FK
+        BIGINT product_key FK
+        INT order_date_key FK
+        INT ship_date_key FK
+        INT due_date_key FK
+        INT quantity
+        DECIMAL unit_price
+        DECIMAL sales_amount
+        DECIMAL unit_cost
+        DECIMAL cost_amount
+        DECIMAL profit_amount
+        DECIMAL margin_pct
+    }
