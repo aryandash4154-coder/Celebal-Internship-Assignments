@@ -1,0 +1,85 @@
+{
+  "summary": "Data Cleaning & Validation Report",
+  "orders_issues": [
+    {
+      "issue_type": "MISSING_CUSTOMER_ID",
+      "count": 33,
+      "affected_order_ids": [
+        "ORD-00025",
+        "ORD-00087",
+        "ORD-00130",
+        "ORD-00154",
+        "ORD-00172",
+        "ORD-00199",
+        "ORD-00213",
+        "ORD-00220",
+        "ORD-00222",
+        "ORD-00223",
+        "ORD-00238",
+        "ORD-00256",
+        "ORD-00273",
+        "ORD-00305",
+        "ORD-00324",
+        "ORD-00338",
+        "ORD-00363",
+        "ORD-00367",
+        "ORD-00388",
+        "ORD-00419",
+        "ORD-00420",
+        "ORD-00457",
+        "ORD-00463",
+        "ORD-00500",
+        "ORD-00518",
+        "ORD-00527",
+        "ORD-00541",
+        "ORD-00550",
+        "ORD-00570",
+        "ORD-00571",
+        "ORD-00577",
+        "ORD-00581",
+        "ORD-00582"
+      ],
+      "action": "Flagged & set customer_id to 'UNASSIGNED'"
+    },
+    {
+      "issue_type": "NON_STANDARD_DATE_FORMAT",
+      "count": 51,
+      "action": "Standardized all date strings to YYYY-MM-DD HH:MM:SS format"
+    }
+  ],
+  "products_issues": [
+    {
+      "issue_type": "UNNORMALIZED_PRODUCT_NAME",
+      "count": 13,
+      "affected_product_ids": [
+        "PROD-0001",
+        "PROD-0005",
+        "PROD-0007",
+        "PROD-0008",
+        "PROD-0014",
+        "PROD-0016",
+        "PROD-0018",
+        "PROD-0020",
+        "PROD-0021",
+        "PROD-0025",
+        "PROD-0030",
+        "PROD-0031",
+        "PROD-0032"
+      ],
+      "action": "Trimmed whitespace and converted product_name to Title Case"
+    }
+  ],
+  "invalid_emails_count": 2,
+  "invalid_emails": [
+    {
+      "customer_id": "CUST-0025",
+      "email": "jennifersingh@"
+    },
+    {
+      "customer_id": "CUST-0058",
+      "email": "nehakulkarni@"
+    }
+  ],
+  "orphan_order_items_count": 0,
+  "orphan_order_items": []
+}

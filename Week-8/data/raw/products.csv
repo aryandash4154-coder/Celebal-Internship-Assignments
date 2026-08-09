@@ -1,0 +1,34 @@
+product_id,product_name,category,subcategory,cost_price
+PROD-0001,  SMARTPHONE PRO  ,Electronics,Electronics General,479.99
+PROD-0002,Wireless Earbuds,Electronics,Electronics General,53.99
+PROD-0003,4K Monitor,Electronics,Electronics General,209.99
+PROD-0004,Mechanical Keyboard,Electronics,Electronics General,71.99
+PROD-0005,  GAMING MOUSE  ,Electronics,Electronics General,29.99
+PROD-0006,Bluetooth Speaker,Electronics,Electronics General,35.99
+PROD-0007,  USB-C HUB  ,Electronics,Electronics General,17.99
+PROD-0008,Webcam HD,Electronics,Electronics General,41.99
+PROD-0009,Smart Watch,Electronics,Electronics General,119.99
+PROD-0010,Tablet Air,Electronics,Electronics General,299.99
+PROD-0011,Denim Jacket,Clothing,Clothing General,39.0
+PROD-0012,Cotton T-Shirt,Clothing,Clothing General,11.99
+PROD-0013,Slim Fit Jeans,Clothing,Clothing General,27.0
+PROD-0014,running shoes ,Clothing,Clothing General,51.0
+PROD-0015,Wool Sweater,Clothing,Clothing General,33.0
+PROD-0016,  LEATHER BELT  ,Clothing,Clothing General,15.0
+PROD-0017,Winter Coat,Clothing,Clothing General,72.0
+PROD-0018,Sports Socks (3-pack),Clothing,Clothing General,7.5
+PROD-0019,Hoodie Sweatshirt,Clothing,Clothing General,24.0
+PROD-0020,  ERGONOMIC DESK CHAIR  ,Home,Home General,108.0
+PROD-0021,LED Desk Lamp,Home,Home General,21.0
+PROD-0022,Ceramic Coffee Mug,Home,Home General,7.2
+PROD-0023,Memory Foam Pillow,Home,Home General,24.0
+PROD-0024,Air Purifier,Home,Home General,78.0
+PROD-0025,  ROBOT VACUUM  ,Home,Home General,150.0
+PROD-0026,Stainless Water Bottle,Home,Home General,13.2
+PROD-0027,Blender 1000W,Home,Home General,45.0
+PROD-0028,Python Data Science Handbook,Books,Books General,27.0
+PROD-0029,Clean Code Guide,Books,Books General,22.8
+PROD-0030,SQL for Analytics,Books,Books General,19.2
+PROD-0031,the lean startup ,Books,Books General,16.8
+PROD-0032,  DESIGNING DATA SYSTEMS  ,Books,Books General,31.2
+PROD-0033,Atomic Habits,Books,Books General,13.2
