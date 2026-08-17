@@ -149,9 +149,9 @@ def load_csv_to_bronze(conn, db_type):
         "bronze.crm_cust_info": SOURCE_CRM_DIR / "cust_info.csv",
         "bronze.crm_prd_info": SOURCE_CRM_DIR / "prd_info.csv",
         "bronze.crm_sales_details": SOURCE_CRM_DIR / "sales_details.csv",
-        "bronze.erp_cust_az12": SOURCE_ERP_DIR / "cust_az12.csv",
-        "bronze.erp_loc_a101": SOURCE_ERP_DIR / "loc_a101.csv",
-        "bronze.erp_px_cat_g1v2": SOURCE_ERP_DIR / "px_cat_g1v2.csv",
+        "bronze.erp_cust_az12": SOURCE_ERP_DIR / "CUST_AZ12.csv",
+        "bronze.erp_loc_a101": SOURCE_ERP_DIR / "LOC_A101.csv",
+        "bronze.erp_px_cat_g1v2": SOURCE_ERP_DIR / "PX_CAT_G1V2.csv",
     }
     
     if db_type == "sqlite":
